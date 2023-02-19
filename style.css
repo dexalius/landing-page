@@ -1,0 +1,16 @@
+*, body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #041836;
+    color: #fff;
+}
+
+:root{
+    --about: #DBDBDB;
+    --button: #4690FF;
+    --btnfooter: #48DF14;
+    --blur: #B3B3B3;
+    --normal : 20px;
+    --medium: 36px;
+    --large: 59px;
+    --btnfz: 24px;
+}
