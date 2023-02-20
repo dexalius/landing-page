@@ -1,7 +1,8 @@
 *, body {
     font-family: 'Poppins', sans-serif;
-    background-color: #041836;
+    background-color: #041836 ;
     color: #fff;
+    transition: all .3s ease;
 }
 
 :root{
@@ -9,8 +10,92 @@
     --button: #4690FF;
     --btnfooter: #48DF14;
     --blur: #B3B3B3;
-    --normal : 20px;
+    --normal : 1.1rem;
     --medium: 36px;
     --large: 59px;
     --btnfz: 24px;
+}
+
+
+.navbar-brand {
+    height: 60px;
+    width: 60px;
+}
+
+.navbar-brand img{
+    aspect-ratio: 1/1;
+    width: 55px;
+}
+
+.navbar-nav li a {
+    color: #fff;
+    font-size: var(--normal);
+    font-weight: 400;
+}
+
+.navbar-nav li a:hover{
+    color: var(--button);
+}
+
+.navbar-nav .login{
+    border: 1px solid var(--button);
+    width: 183px;
+    height: 48px;
+    font-size: var(--normal);
+    color: #fff;
+    border-radius: 20px;
+}
+
+.navbar-nav .login:hover{
+    background-color: var(--button);
+}
+
+.navbar-nav .login i {
+    height: 28px;
+    background-color: inherit;
+}
+
+.navbar-nav .sign {
+    color: #fff;
+    border-radius: 20px;
+    height: 48px;
+    width: 183px;
+    background-color: var(--button);
+    font-size: var(--normal);
+}
+
+.navbar-nav .sign:hover{
+    background-color: #041836;
+    border: 1px solid var(--button);
+}
+
+.hero{
+    margin-top: 100px;
+    height: 100vh;
+}
+
+.hero .row .col:nth-child(1) h1{
+    font-size: var(--large);
+}
+
+
+
+@media (max-width: 1200px){
+    .navbar-nav .login, .navbar-nav .sign{
+        width: 150px;
+        font-size: 1rem;
+    }
+
+    .navbar-nav li a{
+        font-size: 1rem;
+    }
+
+    .navbar-brand img{
+        width: 50px;
+    }
+
+}
+
+@media screen and (max-width: 399px) {
+    
 }
