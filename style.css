@@ -12,8 +12,9 @@
     --blur: #B3B3B3;
     --normal : 1.1rem;
     --medium: 36px;
-    --large: 59px;
+    --large: 57px;
     --btnfz: 24px;
+    /* 485070 */
 }
 
 
@@ -52,7 +53,7 @@
 
 .navbar-nav .login i {
     height: 28px;
-    background-color: inherit;
+    background-color: transparent;
 }
 
 .navbar-nav .sign {
@@ -78,6 +79,71 @@
     font-size: var(--large);
 }
 
+.hero .row .col:nth-child(1) p {
+    width: 443px;
+    font-size: var(--normal);
+}
+
+.hero .row .col:nth-child(1) button {
+    width: 237px;
+    height: 58px;
+    border-radius: var(--normal);
+    background-color: var(--button);
+    font-weight: 600;
+    font-size: 1.15rem;
+    border: none;
+}
+
+.hero .row .col:nth-child(1) button i{
+    background-color: transparent;
+    margin-left: 10px;
+}
+
+.hero .row .col:nth-child(1) button:hover{
+    background-color: var(--btnfooter);
+}
+
+.hero .row .col:nth-child(2) .blur {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0px 4px 122px 179px rgba(43, 158, 223, 0.25);
+}
+
+.hero .row .col:nth-child(2) img{
+    position: relative;
+    z-index: 99;
+    background-color: transparent;
+}
+
+.hero .row:nth-child(2){
+    font-size: var(--normal);
+}
+
+.hero .row:nth-child(3) .blur{
+    position: absolute;
+    width: 95%; height: 26px;
+    background: #0D355B;
+    top: 30%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 117px 51px rgba(43, 158, 223, 0.25);
+    z-index: 1;
+}
+
+.hero .row:nth-child(3) .col img{
+    height: 55px;
+    background-color: transparent;
+    z-index: 99;
+    cursor: pointer;
+}
+
+
+
+
 
 
 @media (max-width: 1200px){
@@ -94,8 +160,45 @@
         width: 50px;
     }
 
+    .hero{
+        margin-top: 50px;
+    }
+
+    .hero .row .col:nth-child(1) h1{
+        font-size: 45px;
+    }
+
+    .hero .row .col:nth-child(2) img{
+        width: 80%;
+    }
+
+    .hero .row:nth-child(3) .col{
+        justify-content: space-between;
+    }
+
+    .hero .row:nth-child(3) .col img{
+        width: 18%;
+        height: 50px;
+    }
+
 }
 
 @media screen and (max-width: 399px) {
-    
+    .hero .row .col:nth-child(1) h1{
+        font-size: 35px;
+    }
+
+    .hero .row .col:nth-child(1) p {
+        font-size: 17px;
+        width: 100%;
+    }
+
+    .hero .row:nth-child(3) .col{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        column-gap: 10px;
+    }
+    .hero .row:nth-child(3) .col img{
+        width: 25%;
+    }
 }
