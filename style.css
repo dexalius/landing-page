@@ -183,6 +183,123 @@
 
 }
 
+.services {
+    height: 160vh;
+    padding-top: 80px;
+}
+
+.services, .services .row, .services .row:nth-child(1) h1, .services .row:nth-child(1) p{
+    background-color: var(--about);
+    color: #000;
+}
+
+.services .row:nth-child(1) h1{
+    font-size: var(--medium);
+    font-weight: 700;
+} 
+
+.services .row:nth-child(1) p{
+    width: 65%;
+    font-size: var(--normal);
+    line-height: 1.5;
+}
+
+.services .row:nth-child(2) .col{
+    width: 46%;
+    padding: 60px;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.services .row:nth-child(2) .col h1{
+    font-size: var(--medium);
+    font-weight: 600;
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+.services .row:nth-child(2) .col p {
+    font-size: var(--normal);
+    text-align: start;
+}
+
+.services .row:nth-child(2) .col .img img{
+    height: 345px;
+    z-index: 99;
+    position: relative;
+    background-color: transparent;
+}
+
+.services .row:nth-child(2) .col .img .blur{
+    position: absolute;
+    width: 58px;height: 58px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    box-shadow: 0px 4px 122px 179px rgba(43, 158, 223, 0.25);
+    left: 30%; top: 50%; 
+}
+
+.services .row:nth-child(3) button{
+    width: 296px; height: 36px;
+    border-radius: 20px;
+    margin-top: 70px;
+    background-color: var(--button);
+    border: none;
+}
+
+.services .row:nth-child(3) button i{
+    background-color: transparent;
+}
+
+.services .row:nth-child(3) button:hover{
+    background-color: var(--btnfooter);
+}
+
+footer{
+    height: 50vh;
+}
+
+footer .row {
+    margin-top: 50px;
+}
+
+footer .row .col:nth-child(1) .head h1{
+    font-size: var(--medium);
+}
+
+footer .row .col:nth-child(1) .head img{
+    aspect-ratio: 1/1;
+    width: 55px;
+}
+
+footer .row .col:nth-child(1) input{
+    width: 233px; height: 49px;
+    border: 1px solid var(--button);
+}
+
+footer .row .col:nth-child(1) input::placeholder{
+    color: rgba(240, 248, 255, 0.673);
+}
+
+footer .row .col:nth-child(1) button{
+    background-color: var(--btnfooter);
+    border: none;
+    width: 127px; height: 49px;
+    color: #000;
+    font-weight: 600;
+    font-size: var(--normal);
+}
+
+footer .row .col:nth-child(2) h1, footer .row .col:nth-child(3) h1{
+    font-size: var(--medium);
+}
+
+footer .row .col:nth-child(2) p{
+    font-size: var(--normal);
+}
+
+
 @media screen and (max-width: 399px) {
     .hero .row .col:nth-child(1) h1{
         font-size: 35px;
