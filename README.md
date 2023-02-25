@@ -1,6 +1,7 @@
 # Landing Page Website
 
 This website uses html, css, and javascript, as well as the tools used by vscode. <br>
+Framework bootstrap
 To see the results visit this link : [https://dexalius.github.io/slicing_company_profile/](https://dexalius.github.io/slicing_company_profile/)
 
 ## Preview
